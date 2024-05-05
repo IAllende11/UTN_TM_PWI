@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h2>Nombre de usuario:</h2>
+        <div>
+            <label for="Username">Escribe el nombre de usuario:</label>
+            <input type="text" id="Username" placeholder="Joe doe" required maxlength="16" minlength="2"> <!--Maxlength es el máximo de caracteres. Minlength es el mínimo de caracteres-->
+        </div>
+        <div>
+            <label for="Password">Escribe la contraseña:</label>
+            <input type="text" id="Password" required>
+        </div>
+        <div>
+            <label for="email">Ingresa su email:</label>
+            <input type="email" name="" id="email">
+        </div>
+        <div>
+            <label for="">Ingrese la fecha:</label>
+            <input type="date" name="">
+            <input type="time">
+            <input type="file" name="" id>
+            <input type="hidden" value="pepe">
+            <input type="number" name="" id="" max="20">
+            <input type="range" max="10" min="0">
+        </div>
+        <div>
+            <label for="terms">Acepta los términos y condiciones</label>
+            <input type="checkbox" name="" id="terms">
+        </div>
+        <div>
+            <h2>¿Cuál prefieres?</h2>
+            <label for="html">HTML</label>
+            <input type="checkbox" name="" id="html">
+            <label for="css">CSS</label>
+            <input type="checkbox" name="" id="CSS">
+            <label for="JS">JS</label>
+            <input type="checkbox" name="" id="JS">
+        </div>
+        <h2>¿Cuál prefieres?</h2>
+            <label for="html">HTML</label>
+            <input type="radio" name="tecnologia_preferir" id="html"> <!--radio es para que el usuario pueda seleccionar una sola opción -->
+            <label for="css">CSS</label>
+            <input type="radio" name="tecnologia_preferir" id="CSS">
+            <label for="JS">JS</label>
+            <input type="radio" name="tecnologia_preferir" id="JS">
+        <div>
+            <label for="pais">Seleccione un país</label> <!--forma nativa con html para hacer selección-->
+            <select name="" id="pais">
+                <option value="Argentina">Argentina</option>
+                <option value="Belgica">Belgica</option>
+                <option value="Dinamarca">Dinamarca</option>
+                <option value="null" selected disabled>No seleccionado</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>
