@@ -1,0 +1,37 @@
+/* Este es el archivo que se encarga de la fuente.
+Y si quisieramos importar otra fuente la importamos aca mismo*/
+
+/* aquí copiamos y pegamos el tipo de fuente. @import es el importe del código de CSS, y el tipo de la fuente es poppins */
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{  /* variable root */
+    --ff-text: "Poppins"
+    --ff-title: "Jersey 25"
+}
+
+/*acá ya tengo dos tipos de fuentes*/
+/* Para darle un estilo de fuente en toda la página debo colocar el *{tipo de fuente q desee} es el selector universal*/
+
+*{
+    font-family: var(--ff-text);
+}
+.title{
+    font-family: var(--ff-title);
+    font-size: 32px;
+    color: var(--primary-color);
+}
+
+.subtitle{
+    font-family: var(--ff-title);
+    font-size: 40px;
+    color: var(--secondary-color)
+    
+}
+
+.text{ /*clase texto*/
+    color: var(--secondary-color);
+    font-size: 20px;
+    background-color: rgb(255, 106, 106);
+}

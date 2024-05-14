@@ -1,0 +1,4 @@
+/*En mi index.css estoy llamando siempre a las variables y fuentes
+Este sería el archivo final que se conectaría al html*/
+@import url(./variables.css); /*siempre con punto (.) y barra (/) */
+@import url(./font.css);

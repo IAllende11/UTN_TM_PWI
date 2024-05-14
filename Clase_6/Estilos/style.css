@@ -1,0 +1,13 @@
+/* Todos mis estilos de página las trabajamos acá */
+@import url(font.css);
+h1{
+    font-family: "poppins";
+    color: rgb(184, 21, 21);
+    font-size: 200%;
+    text-decoration: underline solid rgba(23, 23, 230, 0.712);
+    letter-spacing: 2px; /*como su nombre lo indica le da el espacio entre las letras*/
+    word-spacing: 10%;
+    line-height: 60%;
+    font-weight: 700;
+}
+/* CSS= HOJA de estilo en cascada */
