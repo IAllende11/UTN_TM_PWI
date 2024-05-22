@@ -1,0 +1,32 @@
+/*Normalizamos*/
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.padre{
+    background-color: green;
+    width: 100vw; /*viewport width. relativa al viewport*/
+    height: 100vh; /*viewport height. relativa al viewport*/
+    display: flex; /**/
+    flex-direction: row-reverse; /* reserve se invierte el orden
+    row le da el orden gráfico, o sea de derecha a izquierda.*/ /*si queremos que se grafíque de forma columna sería: 
+    flex-direction: column-reverse; */
+    /*flex-wrap: wrap hará que se adapte o acomode los elementos en el espacio*/
+    gap: 50px; /*gap hace que se genere espacio entre los elementos*/
+    justify-content: center;/*centre los elementos en el viewport. tiene 3 valores mas*/
+    align-items: end; /*horizontalemente actúa, puede ser center, end, */
+}
+/*Estoy llamando a los hijos que esten dentro de padre*/
+.padre .hijo{
+    background-color: red;
+    width: 200px ;
+    height: 300px ;
+    border: 1px solid black ;
+}
+/*Así llamamos el primer hijo de padre, ya que CSS es jerarquico el de arriba es el primero.
+otra manera de llamarlo sería denominar primero en html al hijo como: hijo hijo_1*/
+.padre .hijo:nth-child(1){ /*se puede escribir como: ".padre .hijo:first-child" tmb*/
+    background-color: blue;
+}
+/*flexbox es unidimensional*/
