@@ -1,0 +1,65 @@
+/*Normalize|Normalizar le llamaremos a lo que se encuentra abajo:
+Esto se realiza para quitar las propiedades que vienen por defecto, por eso se coloca a la propiedad universal*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* margin: espacio que está del borde hacia afuera
+    border: grosor tipo color */
+.caja{
+    width: 200px ;
+    height: 200px ;
+    background-color: chocolate;
+    margin-top: 100px;
+    margin-left: 200px;
+    border: 4px solid yellow; /*borde de la caja.
+    El tipo de borde puede ser: solid, dotted, outset, dashed, inset */
+    border-left: 4px solid rgba(4, 153, 4, 0.692);
+    /*padding: espacio que existe del borde hacia dentro*/
+    padding: 10px; /*cuando colocamos padding solo, está afectando a todos los lados*/
+
+    /*para aplicar la propiedad de padding y no poner padding bottom, top, left etc,
+    podemos aplicar el padding de la siguiente manera mas fácil y rápida: en sentido de las agujas del reloj*/
+    padding: 20px 30px 40px 20px;
+    box-shadow: 20px 20px 3px 0px rgba(63, 1, 21, 0.76); /*es una propiedad que necesita un orden en específico, ésta propiedad le da sombra a la caja.
+    Los valores de esta propiedad se presenta como el eje X y el eje Y como en matemáticas
+    el primer valor es el eje X por lo que si es un número positivo la sombra irá hacia la izquierda y si es un núm. negativo
+    irá hacia la izquierda.
+    el segundo valor es el eje Y si es un número positivo la sombra irá hacia arriba y si es negativo irá hacia abajo.
+    Por último el tercer valor es el difuminador de la sombra. Y se le puede poner un cuerto valor que es el color */
+    border-radius: 100px;
+}   /*https://www.cssmatic.com/es/box-shadow*/
+span{
+    display: inline-block; /*elemento inline-block*/
+    background-color: rgba(2, 2, 165, 0.541);
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    border: 5px solid rgba(221, 65, 3, 0.836);
+}
+
+/*Header de la pagina de mercado libre*/
+header{
+    background-color: rgb(255,230,0);
+    padding: 30px;
+}
+
+header input{
+    width: 340px;
+    padding: 12px 10px 10px 15px;
+    background-color: white;
+    border: none;
+    font-size: 17px;
+    box-shadow: 0px 1px 2px  rgba(0, 0, 0, 0.2);
+    border-radius: 2px; /*border-radius es muy utilizado para darle un aspecto redondeado en las puntas*/
+}
+header .buscador::placeholder{
+    color: #999999;
+}
